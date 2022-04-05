@@ -1,12 +1,12 @@
 # Create a child class Bus that will inherit all of the variables and methods of the Vehicle class
-class vehicle : 
-    def __init__(self,name,max_speed,mileage) :
+class Vehicle : 
+    def __init__(self, name, max_speed, mileage) :
         self.name = name 
         self.max_speed = max_speed
         self.mileage = mileage
 
-class Bus (vehicle) : 
+class Bus(Vehicle) : 
     pass
 
-School_Bus = Bus("SB",240,18)
-print(School_Bus.name,School_Bus.max_speed,School_Bus.mileage)
+schoolBus = Bus("SB",240,18)
+print(schoolBus.name, schoolBus.max_speed, schoolBus.mileage)
